@@ -170,8 +170,8 @@ p {
 }
 
 .carrusel-imagen {
-    flex: 1;
-    min-width: 50%;
+    flex: 0 0 48%;
+    height: 320px;
 }
 
 .carrusel-imagen img {
@@ -329,22 +329,23 @@ p {
 .bola-click::after {
     content: '↑ ver más';
     position: absolute;
-    bottom: 26px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.58rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     white-space: nowrap;
     pointer-events: none;
-    animation: bolaHint 2.8s ease-in-out infinite;
+    animation: bolaHint 2.4s ease-in-out infinite;
 }
 
 @keyframes bolaHint {
-    0%, 100% { opacity: 0.25; transform: translateX(-50%) translateY(0); }
-    50% { opacity: 0.8; transform: translateX(-50%) translateY(-4px); }
+    0%, 100% { opacity: 0.45; transform: translateX(-50%) translateY(0); }
+    50% { opacity: 1; transform: translateX(-50%) translateY(-5px); }
 }
 
 .bola-click:hover::after {
@@ -838,7 +839,7 @@ p {
     }
 
     .bola-click::after {
-        font-size: 0.52rem;
+        font-size: 0.62rem;
         bottom: 22px;
     }
 
