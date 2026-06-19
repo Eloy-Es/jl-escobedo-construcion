@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /html/aviso-legal.html
+Disallow: /html/condiciones-uso.html
+Disallow: /html/politica-privacidad.html
+Disallow: /html/politica-cookies.html
+
+Sitemap: https://jl-escobedo.com/sitemap.xml
